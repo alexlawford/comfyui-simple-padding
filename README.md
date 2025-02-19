@@ -6,16 +6,12 @@ Simple padding takes as inputs the following:
 
 **Y1**, integer: the y coordinate of the top-left point of your box
 
-**X2**, integer: the x coordinate of the bottom-right point of your box
+**Width**, integer: the height of the (unpadded) box
 
-**Y2**, integer: the y coordinate of the bottom-right point of your box
-
-**max_X**, integer: the maximum x cordinate that should be returned
-
-**max_Y**, integer: the maximum y cordinate that should be returned
+**Height**, integer: the width of the (unpadded) box
 
 **padding**, the number to pad by
 
 It returns:
 
-**X1**, **Y1** the top-left coordinates of the padded box and **X2**, **Y2** the bottom-right coordinates of the padded box.
+**X1**, **Y1** the top-left coordinates of the padded box and **width**, **height** the dimensions of the padded box.
