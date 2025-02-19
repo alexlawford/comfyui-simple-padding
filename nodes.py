@@ -15,7 +15,7 @@ custom_nodes_script_dir = os.path.dirname(os.path.abspath(__file__))
 custom_nodes_model_dir = os.path.join(folder_paths.models_dir, "my-custom-nodes")
 custom_nodes_output_dir = os.path.join(folder_paths.get_output_directory(), "my-custom-nodes")
 
-#  Second Node
+#  Simple Padding Node
 class SimplePadding:
     @classmethod
     def INPUT_TYPES(s):
