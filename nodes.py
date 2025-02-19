@@ -24,10 +24,10 @@ class SimplePadding:
                 "X1": ("INT", {"default": 0}),
                 "Y1": ("INT", {"default": 0}),
                 "X2": ("INT", {"default": 0}),
-                "Y1": ("INT", {"default": 0}),
-                "Max X": ("INT", {"default": 0}),
-                "Max Y": ("INT", {"default": 0}),
-                "Padding": ("INT", {"default": 0}),
+                "Y2": ("INT", {"default": 0}),
+                "max_X": ("INT", {"default": 0}),
+                "max_Y": ("INT", {"default": 0}),
+                "padding": ("INT", {"default": 0}),
             }
         }
 
@@ -37,18 +37,18 @@ class SimplePadding:
     CATEGORY = "CustomNodesTemplate"
 
     def pad(self,
-             x1: int,
-             y1: int,
-             x2: int,
-             y2: int,
-             max_x: int,
-             max_y: int,
+             X1: int,
+             Y1: int,
+             X2: int,
+             Y2: int,
+             max_X: int,
+             max_Y: int,
              padding: int,
              ) -> Tuple[int]:
        
-        x1b = x1 - padding if x1 - padding > 0 else 0
-        x2b = x2 + padding if x2 + padding < max_x else max_x
-        y1b = y1 - padding if y1 - padding > 0 else 0
-        y2b = y2 + padding if y2 + padding < max_y else max_y
+        x1b = X1 - padding if X1 - padding > 0 else 0
+        x2b = X2 + padding if X2 + padding < max_X else max_X
+        y1b = Y1 - padding if Y1 - padding > 0 else 0
+        y2b = Y2 + padding if Y2 + padding < max_Y else max_Y
 
         return (x1b, y1b, x2b, y2b)
