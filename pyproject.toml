@@ -3,7 +3,7 @@
 [project]
 name = "comfyui-simple-padding"
 description = "Simple box padding for Comfyui [Simple Padding](https://github.com/alexlawford/comfyui-simple-padding)."
-version = "1.0.0"
+version = "1.0.1"
 license = {file = "LICENSE"}
 dependencies = [""]
 
