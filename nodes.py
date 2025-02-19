@@ -21,8 +21,8 @@ class SimplePadding:
     def INPUT_TYPES(s):
         return {
             "required": {
-                "X1": ("INT", {"default": 0}),
-                "Y1": ("INT", {"default": 0}),
+                "x": ("INT", {"default": 0}),
+                "y": ("INT", {"default": 0}),
                 "width": ("INT", {"default": 0}),
                 "height": ("INT", {"default": 0}),
                 "padding": ("INT", {"default": 0}),
@@ -30,7 +30,7 @@ class SimplePadding:
         }
 
     RETURN_TYPES = ("INT", "INT", "INT", "INT")
-    RETURN_NAMES = ("X1", "Y1", "X2", "Y2")
+    RETURN_NAMES = ("x", "y", "width", "height")
     FUNCTION = "pad"
     CATEGORY = "CustomNodesTemplate"
 
